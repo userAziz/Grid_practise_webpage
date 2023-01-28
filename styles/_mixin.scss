@@ -1,0 +1,40 @@
+@import './variables';
+
+@mixin twoRaws {
+    grid-row: span 2;
+}
+
+@mixin twoCols {
+    grid-column: span 2;
+}
+
+@mixin gridFrame {
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color:#222222;
+}
+
+@mixin gridContainer {
+    display: grid;
+	gap: 1.5rem;
+	grid-template-columns: repeat(4, 1fr);
+    
+}
+@mixin gridStarBtn {
+    display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+@mixin gridFrame_p {
+    font-family: $textFamily;
+    color: $textColor;
+}
+
+@mixin cardImg {
+    height: 400px;
+}
+
+@mixin watchBtn {
+    color: black;
+    text-decoration: none;
+}

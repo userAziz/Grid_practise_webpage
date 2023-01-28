@@ -1,0 +1,35 @@
+.grid-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: cursive;
+  color: #e0dddd;
+}
+.grid-container .btn-star-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-container .grid-frame {
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #222222;
+}
+.grid-container .grid-two, .grid-container .grid-four {
+  grid-column: span 2;
+}
+.grid-container .grid-three {
+  grid-row: span 2;
+}
+.grid-container .checked {
+  color: orange;
+}
+.grid-container .card-img-top {
+  height: 400px;
+}
+.grid-container .btn_modify {
+  width: 150px;
+}
+.grid-container .btn a {
+  color: black;
+  text-decoration: none;
+}/*# sourceMappingURL=index.css.map */

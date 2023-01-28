@@ -1,0 +1,43 @@
+@import './variables'; 
+@import './mixin';
+
+
+
+.grid-container {
+    
+	@include gridContainer ();
+    
+    .btn-star-grid {
+        @include gridStarBtn ();
+    }
+
+    .grid-frame {
+        @include gridFrame ();
+    }
+
+    @include gridFrame_p ();
+
+    .grid-two , .grid-four {
+        @include twoCols (); 
+    }
+
+    .grid-three {
+        @include twoRaws (); 
+    }
+
+    .checked {
+        color: orange;
+    } //used to rate the star of movies
+    .card-img-top {
+        @include cardImg (); // movie images in the card
+    }
+    .btn_modify {
+        width: 150px;
+    } // width of the btn watch now
+    .btn a{
+        @include watchBtn ();
+    }
+}
+
+
+
